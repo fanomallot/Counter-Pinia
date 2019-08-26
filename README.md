@@ -4,4 +4,4 @@ Détecter les évènements en JavaScript
 ANDRIAMAHEFA Ainatina Fanomezana
 
 
-Arinoely Miora Tahina
+ARINOELY Miora Tahina
