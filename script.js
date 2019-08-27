@@ -100,36 +100,29 @@ let find1 = document.getElementsByClassName('card mb-4 box-shadow')[0];
 	filsss.remove();
 });
 // Fonctionnalité 9
-let logo = document.getElementsByTagName('strong')[0];
-let body = document.querySelector('body');
-
-let mouse = logo.addEventListener("mouseenter", function () {
-	document.addEventListener("keydown", function (event) {
+let jsevent = document.getElementsByTagName('strong')[0];
+console.log(jsevent);
+let getbody = document.getElementsByTagName('body');
+console.log(getbody);
+jsevent.addEventListener('click',function(){
+	document.addEventListener('keydown',function(event){
 		key = event.keyCode;
 		console.log(key);
-		switch (key) {
-			case 65:
-			body.removeAttribute('class');
-				body.classList.add('col-4');
-				break;
-			case 89:
-			body.removeAttribute('class');
-				body.classList.add('col-4');
-				body.classList.add('offset-md-4');
-				console.log('test');
-				break;
-
-			case 80:
-			body.removeAttribute('class');
-				body.classList.add('col-4');
-				body.classList.add('offset-md-8');
-				console.log('test');
-				break;
-			case 66:
-			body.removeAttribute('class');
-				console.log('test');
-			break;
+		if (key == 65){
+			getbody[0].removeAttribute('class');
+			getbody[0].setAttribute("class", "col-4");
+		}
+		if (key == 89){
+			getbody[0].removeAttribute('class');
+			getbody[0].setAttribute("class", "offset-md-4");
+		}
+		if (key == 80){
+			getbody[0].removeAttribute('class');
+			getbody[0].setAttribute("class", "offset-md-8");
+		}
+		if (key == 66){
+			getbody[0].removeAttribute('class');
 		}
 
-	})
+	});	
 });
